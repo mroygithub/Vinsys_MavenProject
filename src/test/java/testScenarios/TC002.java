@@ -22,13 +22,14 @@ public class TC002 {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get(URL);
+        System.out.println("Browser Launched Successfully");
 		
 	}
 	
-	@Test(groups="ee")
+	@Test()
 	public void test_the_apllication() {
 		
-		
+		System.out.println("Quiting the Browser");
         driver.quit();
 	}
 	
